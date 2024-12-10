@@ -43,24 +43,24 @@ def contabilizar_votos():
 window = tk.Tk()
 window.title("Sistema de Votação")
 window.geometry("450x550")
-window.configure(bg="#e0e0e0")
+window.configure(bg="#C0FF02")
 
 # Título
-title = tk.Label(window, text="Sistema de Votação", font=("Arial", 20, "bold"), bg="#e0e0e0", fg="#333")
+title = tk.Label(window, text="Sistema de Votação", font=("Arial", 20, "bold"), bg="#C0FF02", fg="#333")
 title.pack(pady=15)
 
 # Input Votos A
-frame_votosA = tk.Frame(window, bg="#e0e0e0")
+frame_votosA = tk.Frame(window, bg="#C0FF02")
 frame_votosA.pack(pady=8)
-label_votosA = tk.Label(frame_votosA, text="Votos para o Candidato A:", font=("Arial", 12), bg="#e0e0e0")
+label_votosA = tk.Label(frame_votosA, text="Votos para o Candidato A:", font=("Arial", 12), bg="#C0FF02")
 label_votosA.pack(side=tk.LEFT)
 entry_votosA = tk.Entry(frame_votosA, font=("Arial", 12), width=8)
 entry_votosA.pack(side=tk.LEFT)
 
 # Input Votos B
-frame_votosB = tk.Frame(window, bg="#e0e0e0")
+frame_votosB = tk.Frame(window, bg="#C0FF02")
 frame_votosB.pack(pady=8)
-label_votosB = tk.Label(frame_votosB, text="Votos para o Candidato B:", font=("Arial", 12), bg="#e0e0e0")
+label_votosB = tk.Label(frame_votosB, text="Votos para o Candidato B:", font=("Arial", 12), bg="#C0FF02")
 label_votosB.pack(side=tk.LEFT)
 entry_votosB = tk.Entry(frame_votosB, font=("Arial", 12), width=8)
 entry_votosB.pack(side=tk.LEFT)
@@ -70,22 +70,22 @@ button = tk.Button(window, text="Contabilizar Votos", font=("Arial", 12, "bold")
 button.pack(pady=15)
 
 # Resultados
-label_resultados = tk.Label(window, text="Resultados:", font=("Arial", 18, "bold"), bg="#e0e0e0", fg="#333")
+label_resultados = tk.Label(window, text="Resultados:", font=("Arial", 18, "bold"), bg="#C0FF02", fg="#333")
 label_resultados.pack()
 
-label_totalA = tk.Label(window, text="Total de Votos do Candidato A: 0", font=("Arial", 12, "bold"), bg="#e0e0e0", fg="#00A53e")
+label_totalA = tk.Label(window, text="Total de Votos do Candidato A: 0", font=("Arial", 12, "bold"), bg="#C0FF02", fg="#00A53e")
 label_totalA.pack()
 
-label_totalB = tk.Label(window, text="Total de Votos do Candidato B: 0", font=("Arial", 12, "bold"), bg="#e0e0e0", fg="#006Abf")
+label_totalB = tk.Label(window, text="Total de Votos do Candidato B: 0", font=("Arial", 12, "bold"), bg="#C0FF02", fg="#006Abf")
 label_totalB.pack()
 
-label_totalGeral = tk.Label(window, text="Total de Votos Geral: 0", font=("Arial", 12, "bold"), bg="#e0e0e0", fg="#828200")
+label_totalGeral = tk.Label(window, text="Total de Votos Geral: 0", font=("Arial", 12, "bold"), bg="#C0FF02", fg="#828200")
 label_totalGeral.pack()
 
-label_percentualA = tk.Label(window, text="Percentual de Votos do Candidato A: 0%", font=("Arial", 12, "bold"), bg="#e0e0e0", fg="#00A53e")
+label_percentualA = tk.Label(window, text="Percentual de Votos do Candidato A: 0%", font=("Arial", 12, "bold"), bg="#C0FF02", fg="#00A53e")
 label_percentualA.pack()
 
-label_percentualB = tk.Label(window, text="Percentual de Votos do Candidato B: 0%", font=("Arial", 12, "bold"), bg="#e0e0e0", fg="#006Abf")
+label_percentualB = tk.Label(window, text="Percentual de Votos do Candidato B: 0%", font=("Arial", 12, "bold"), bg="#C0FF02", fg="#006Abf")
 label_percentualB.pack()
 
 # Gráfico de Barras
